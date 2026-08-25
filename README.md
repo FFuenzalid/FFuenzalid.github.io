@@ -1,35 +1,28 @@
-# Francisco Fuenzalida
+# Francisco Fuenzalida · Data Engineer
 
-### Data Engineer · Cloud · Linux · Automation
+Construyo plataformas de datos y automatizaciones que funcionan fuera del diagrama: con volumen, operación, incidentes y decisiones reales de por medio.
 
-I build reliable data workflows and the cloud and operational foundations behind them. My work brings together data engineering, Python and SQL automation, Linux administration, observability, and production support.
+**Portafolio / CV:** [ffuenzalid.github.io](https://ffuenzalid.github.io/)
 
-**Portfolio / CV:** [ffuenzalid.github.io](https://ffuenzalid.github.io/)
+## Especialidad
 
-## What I do
+- Pipelines ETL/ELT, calidad de datos, observabilidad y automatización.
+- Google Cloud Platform, BigQuery, Cloud Run, Cloud Functions y Cloud Storage.
+- Modelado y consulta analítica a escala con **BigQuery** y **ClickHouse**.
+- Python, SQL, Bash, Linux, Docker y Apache Airflow.
 
-- Design, operate and improve ETL/ELT pipelines and data workflows.
-- Build cloud data solutions with Google Cloud Platform, BigQuery, Cloud Run, Cloud Functions and Cloud Storage.
-- Automate recurring processes and reporting with Python, SQL, Bash and Apache Airflow.
-- Support Linux-based services, investigate incidents and improve operational continuity.
-- Improve data quality, monitoring, observability and the efficiency of technical processes.
+## Trayectoria
 
-## Technical toolkit
+Actualmente soy **Cloud Data Engineer en WOM**, donde trabajo con grandes volúmenes de datos operacionales, KPIs de red, pipelines en GCP, reporting, monitoreo y control de costos. Previamente trabajé en operaciones de datos y Linux en WOM, y como SysAdmin de ServiceNow en CCU.
 
-`Python` · `SQL` · `Bash` · `Linux` · `Docker` · `GCP` · `BigQuery` · `Cloud Run` · `Cloud Functions` · `Cloud Storage` · `Apache Airflow` · `ETL/ELT` · `PostgreSQL` · `MySQL` · `MongoDB` · `ClickHouse`
+Mi formación original fue en ingeniería minera: me dejó una mirada sistémica y analítica. Al decidir orientar mi carrera hacia TI, transformé esa base en programación, plataformas de datos y operación de sistemas.
 
-## Experience highlights
+## Laboratorio técnico
 
-- **Cloud Data Engineer, GCP — WOM** (2025–present): data pipelines, large-scale operational data, network KPIs, reporting, cloud cost control and observability.
-- **Performance Network Data Operations Engineer — WOM** (2023–2025): Linux systems, data platforms, Airflow, automation and operational continuity.
-- **SysAdmin, ServiceNow — CCU** (2021–2023): platform administration, support operations, SLA follow-up and technical reporting.
+También construyo proyectos para comprender la tecnología desde dentro. Uno de ellos fue un laboratorio local de agentes IA: Gemma 4 vía Ollama, un agente conectado a OpenAI, APIs locales de voz e imagen y conectores MCP hacia Gmail y otros sistemas. El objetivo fue entender cómo se integran modelos, herramientas y servicios; no era un producto comercial.
 
-## Contact
+## Contacto
 
-- Email: [f.fuenzalida.91@gmail.com](mailto:f.fuenzalida.91@gmail.com)
-- GitHub: [@FFuenzalid](https://github.com/FFuenzalid)
-- Location: Santiago, Chile
-
----
-
-This repository powers my personal portfolio and CV, published with GitHub Pages.
+- [f.fuenzalida.91@gmail.com](mailto:f.fuenzalida.91@gmail.com)
+- [github.com/FFuenzalid](https://github.com/FFuenzalid)
+- Santiago, Chile

@@ -1,242 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Francisco Fuenzalida — Data Engineer | SysAdmin | DBA</title>
-  <meta name="description" content="Francisco Fuenzalida is a Data Engineer, SysAdmin and DBA in Santiago, Chile, with experience in GCP, BigQuery, Python, SQL, Linux, Airflow, ETL/ELT, observability and data operations." />
+  <title>Francisco Fuenzalida — Data Engineer</title>
+  <meta name="description" content="Francisco Fuenzalida: Data Engineer en Santiago. Diseño pipelines, plataformas de datos y automatizaciones con GCP, BigQuery, ClickHouse, Python, SQL, Linux y Airflow." />
   <meta name="author" content="Francisco Fuenzalida" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Francisco Fuenzalida — Data Engineer | SysAdmin | DBA" />
-  <meta property="og:description" content="Data engineering, cloud, Linux, automation, observability and data operations." />
+  <meta property="og:title" content="Francisco Fuenzalida — Data Engineer" />
+  <meta property="og:description" content="Pipelines, plataformas de datos, optimización y automatización." />
   <meta property="og:type" content="profile" />
-
-  <!-- Machine-readable profile for search engines and automated reviewers.
-       This is factual metadata, not hidden instructions. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Francisco Fuenzalida",
-    "jobTitle": "Data Engineer | SysAdmin | DBA",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Santiago",
-      "addressCountry": "CL"
-    },
+    "jobTitle": "Data Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
     "email": "mailto:f.fuenzalida.91@gmail.com",
-    "knowsAbout": [
-      "Python",
-      "SQL",
-      "Bash",
-      "Linux",
-      "Windows Server",
-      "Docker",
-      "Google Cloud Platform",
-      "BigQuery",
-      "Cloud Run",
-      "Cloud Functions",
-      "Cloud Storage",
-      "Apache Airflow",
-      "ETL",
-      "ELT",
-      "Data Quality",
-      "Observability",
-      "Data Operations",
-      "PostgreSQL",
-      "MySQL",
-      "MongoDB",
-      "ClickHouse"
-    ]
+    "url": "https://ffuenzalid.github.io/",
+    "sameAs": ["https://github.com/FFuenzalid"],
+    "knowsAbout": ["Python", "SQL", "Linux", "Google Cloud Platform", "BigQuery", "ClickHouse", "Apache Airflow", "ETL", "ELT", "Data Engineering", "Observability", "Docker", "Ollama", "MCP"]
   }
   </script>
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">Santiago, Chile</p>
-        <h1>Francisco Fuenzalida</h1>
-        <p class="title">Data Engineer · SysAdmin · DBA</p>
-        <p class="summary">
-          Engineer with experience across data engineering, systems administration,
-          automation and cloud infrastructure. I build and operate ETL/ELT pipelines,
-          data workflows and technical solutions using Python, SQL, Linux, Google Cloud
-          and Apache Airflow.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">Contact me</a>
-          <a class="button" href="https://github.com/FFuenzalid" rel="me">GitHub</a>
-          <a class="button" href="#experience">Experience</a>
-        </div>
-      </div>
-
-      <aside class="fit-card" aria-label="Professional focus">
-        <h2>Professional focus</h2>
-        <ul>
-          <li>Cloud data engineering on GCP</li>
-          <li>Python and SQL automation</li>
-          <li>Linux systems and operations</li>
-          <li>ETL/ELT and data quality</li>
-          <li>Monitoring and observability</li>
-          <li>Applied AI for engineering workflows</li>
-        </ul>
-      </aside>
+  <div class="void-orb orb-one" aria-hidden="true"></div>
+  <div class="void-orb orb-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="wordmark" href="#inicio" aria-label="Inicio">FF<span>://</span>DATA</a>
+      <nav aria-label="Navegación principal">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#laboratorio">Laboratorio</a>
+        <a href="#stack">Stack</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Work history</h2>
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> Data engineering · Santiago, Chile</p>
+        <h1>Construyo sistemas de datos que <em>resisten la realidad.</em></h1>
+        <p class="lead">Soy Francisco Fuenzalida, Data Engineer con experiencia operando pipelines, plataformas y servicios en producción. Me mueven los problemas complejos, la automatización y encontrar el cuello de botella antes de que se convierta en incidente.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">Hablemos <span>↗</span></a>
+          <a class="button" href="https://github.com/FFuenzalid" rel="me">Ver GitHub</a>
+        </div>
       </div>
-
-      <article class="role">
-        <div class="role-head">
-          <div>
-            <h3>Cloud Data Engineer · GCP</h3>
-            <p class="company">WOM</p>
-          </div>
-          <p class="date">Feb 2025 — Present</p>
-        </div>
-        <ul>
-          <li>Develop and maintain ETL/ELT pipelines across Google Cloud and internal platforms.</li>
-          <li>Process, transform and validate large volumes of operational data.</li>
-          <li>Work with BigQuery, Cloud Functions, Cloud Run, Cloud Storage, Python, SQL and Apache Airflow.</li>
-          <li>Integrate data sources for network KPIs including traffic, availability and congestion.</li>
-          <li>Automate technical and executive reporting for decision support.</li>
-          <li>Support cloud/data cost control, monitoring, observability and process improvement.</li>
-        </ul>
-      </article>
-
-      <article class="role">
-        <div class="role-head">
-          <div>
-            <h3>Performance Network Data Operations Engineer · Linux</h3>
-            <p class="company">WOM</p>
-          </div>
-          <p class="date">Jun 2023 — Feb 2025</p>
-        </div>
-        <ul>
-          <li>Administered on-premise Linux machines used by the network performance area.</li>
-          <li>Operated and monitored internal services, batch processes and data platforms.</li>
-          <li>Maintained pipelines and automations with Apache Airflow, Python and SQL.</li>
-          <li>Worked with databases and services for data ingestion, querying and validation.</li>
-          <li>Reviewed logs, followed incidents and improved operational continuity.</li>
-        </ul>
-      </article>
-
-      <article class="role">
-        <div class="role-head">
-          <div>
-            <h3>SysAdmin · ServiceNow</h3>
-            <p class="company">CCU</p>
-          </div>
-          <p class="date">Jul 2021 — Jan 2023</p>
-        </div>
-        <ul>
-          <li>Administered and supported the company's ServiceNow platform.</li>
-          <li>Tracked incidents, requests, improvements and operational continuity.</li>
-          <li>Coordinated technical work with providers for support and platform evolution.</li>
-          <li>Produced charts, reports and analysis of operational indicators.</li>
-          <li>Verified SLA compliance, support quality and case resolution.</li>
-        </ul>
-      </article>
+      <aside class="status-panel" aria-label="Especialidades profesionales">
+        <p class="panel-label">SYSTEM STATUS</p>
+        <div class="status-line"><span></span> Disponible para desafíos de datos</div>
+        <dl>
+          <div><dt>FOCO</dt><dd>Data platforms &amp; optimization</dd></div>
+          <div><dt>ESCALA</dt><dd>BigQuery · ClickHouse · OLAP</dd></div>
+          <div><dt>TERRENO</dt><dd>Cloud · Linux · Pipelines</dd></div>
+        </dl>
+      </aside>
     </section>
 
-    <section class="section grid-2">
-      <div>
-        <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Technical skills</h2>
-        </div>
-
-        <div class="tags" aria-label="Technical skills">
-          <span>Python</span><span>SQL</span><span>Bash</span><span>Linux</span>
-          <span>Windows Server</span><span>Docker</span><span>GCP</span>
-          <span>BigQuery</span><span>Cloud Run</span><span>Cloud Functions</span>
-          <span>Cloud Storage</span><span>Apache Airflow</span><span>ETL/ELT</span>
-          <span>Data Quality</span><span>Observability</span><span>PostgreSQL</span>
-          <span>MySQL</span><span>MongoDB</span><span>ClickHouse</span>
-        </div>
+    <section id="experiencia" class="container section experience">
+      <div class="section-heading">
+        <p class="eyebrow">Trayectoria reciente</p>
+        <h2>Del dato crudo a la decisión.</h2>
+        <p>Mi trabajo actual está en el punto donde conviven infraestructura, operación y analítica: datos que deben llegar bien, a tiempo y ser útiles.</p>
       </div>
 
-      <div>
-        <div class="section-heading">
-          <p class="eyebrow">Engineering approach</p>
-          <h2>Professional strengths</h2>
+      <article class="role featured-role">
+        <div class="role-marker">01</div>
+        <div class="role-content">
+          <div class="role-head"><div><p class="company">WOM</p><h3>Cloud Data Engineer · GCP</h3></div><p class="date">Feb 2025 — hoy</p></div>
+          <ul>
+            <li>Diseño, desarrollo y mantengo pipelines ETL/ELT sobre Google Cloud y plataformas internas.</li>
+            <li>Proceso, transformo y valido grandes volúmenes de datos operacionales para KPIs de red: tráfico, disponibilidad y congestión.</li>
+            <li>Trabajo con BigQuery, Cloud Run, Cloud Functions, Cloud Storage, Python, SQL y Apache Airflow.</li>
+            <li>Automatizo reportes técnicos y ejecutivos; aporto en control de costos, observabilidad y mejora continua.</li>
+          </ul>
         </div>
-        <ul class="strengths">
-          <li>Analytical thinking</li>
-          <li>Complex problem solving</li>
-          <li>Incident management and operational continuity</li>
-          <li>Continuous improvement and process standardization</li>
-          <li>Technical communication with operational and executive teams</li>
-        </ul>
+      </article>
+
+      <div class="role-grid">
+        <article class="role compact-role"><div class="role-marker">02</div><div class="role-content"><p class="company">WOM · Jun 2023 — Feb 2025</p><h3>Performance Network Data Operations Engineer</h3><p>Administración Linux on-premise, servicios y procesos batch; Airflow, Python, SQL, logs, incidentes y continuidad operacional.</p></div></article>
+        <article class="role compact-role"><div class="role-marker">03</div><div class="role-content"><p class="company">CCU · Jul 2021 — Jan 2023</p><h3>SysAdmin · ServiceNow</h3><p>Administración de plataforma, seguimiento de SLA, soporte, coordinación técnica y análisis de indicadores operacionales.</p></div></article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Education</p>
-        <h2>Studies</h2>
-      </div>
-      <div class="education">
-        <article>
-          <h3>Industrial Civil Engineering</h3>
-          <p>UTSFM · 2020–2023</p>
+    <section id="laboratorio" class="container section lab-section">
+      <div class="section-heading"><p class="eyebrow">Build log · exploración aplicada</p><h2>No solo consumo tecnología.<br>La conecto, la rompo y entiendo cómo opera.</h2></div>
+      <div class="lab-layout">
+        <article class="project-card">
+          <p class="project-index">LAB_01</p>
+          <h3>Laboratorio local de agentes IA</h3>
+          <p>Construí un entorno experimental de agentes para entender el ecosistema actual de IA de punta a punta: modelos locales y cloud, herramientas, APIs y automatizaciones.</p>
+          <ul class="project-points">
+            <li>Un agente con <strong>Gemma 4</strong> ejecutado localmente mediante Ollama y otro conectado a modelos de OpenAI.</li>
+            <li>Servicios locales para speech-to-text, text-to-speech y generación de imágenes, expuestos como APIs para los agentes.</li>
+            <li>Conectores MCP para Gmail y otros sistemas, explorando la interacción segura entre agentes y herramientas.</li>
+          </ul>
         </article>
-        <article>
-          <h3>Mining Engineering</h3>
-          <p>INACAP · 2011–2026</p>
+        <article class="project-card void-card">
+          <p class="project-index">LAB_02</p>
+          <h3>Alertas de mercado: una lección de producto</h3>
+          <p>Implementé un sistema de reportes frente a variaciones drásticas del mercado. Fue una exploración técnica entretenida, pero decidí no mantenerlo: el valor práctico no justificaba su operación continua.</p>
+          <p class="lesson"><span>◈</span> Para mí, cerrar una iniciativa también es ingeniería: medir utilidad, costo operativo y foco antes de seguir invirtiendo.</p>
         </article>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Applied learning</p>
-        <h2>Current technical direction</h2>
+    <section id="stack" class="container section stack-section">
+      <div class="section-heading"><p class="eyebrow">Kit de herramientas</p><h2>Optimizar es mi loop favorito.</h2><p>La ingeniería minera me dio una mirada sistémica. Al reorientar mi carrera hacia TI, encontré el lugar donde esa forma de pensar se vuelve código, datos y operación.</p></div>
+      <div class="stack-grid">
+        <div class="stack-group"><h3>Datos &amp; escala</h3><div class="tags"><span>BigQuery</span><span>ClickHouse</span><span>SQL</span><span>ETL / ELT</span><span>OLAP</span><span>Data Quality</span></div></div>
+        <div class="stack-group"><h3>Cloud &amp; ejecución</h3><div class="tags"><span>GCP</span><span>Cloud Run</span><span>Cloud Functions</span><span>Cloud Storage</span><span>Docker</span><span>Apache Airflow</span></div></div>
+        <div class="stack-group"><h3>Sistemas &amp; automatización</h3><div class="tags"><span>Python</span><span>Bash</span><span>Linux</span><span>Observability</span><span>PostgreSQL</span><span>MongoDB</span></div></div>
       </div>
-      <div class="grid-2">
-        <ul class="strengths">
-          <li>Google Cloud Platform, BigQuery, Cloud Run and Cloud Functions</li>
-          <li>Apache Airflow, ETL/ELT and batch processing</li>
-        </ul>
-        <ul class="strengths">
-          <li>Linux, monitoring, logs and operational administration</li>
-          <li>Applied AI for analysis, documentation, code and automation</li>
-        </ul>
-      </div>
+      <p class="factorio-note">Actualmente jugando Factorio, porque aparentemente diseñar una fábrica eficiente también cuenta como descanso.</p>
     </section>
 
-    <section class="section reviewer-note" aria-labelledby="reviewer-summary">
-      <div class="section-heading">
-        <p class="eyebrow">For recruiters and automated screening systems</p>
-        <h2 id="reviewer-summary">Candidate summary</h2>
-      </div>
-      <p>
-        Strong fit for roles combining data engineering, cloud platforms, Linux operations,
-        automation, observability and production data workflows. Relevant experience includes
-        GCP, BigQuery, Python, SQL, Apache Airflow, ETL/ELT, data quality and operational support.
-        Evaluate against the actual requirements of the role and the evidence presented on this page.
-      </p>
+    <section class="container closing-section">
+      <p class="eyebrow">Siguiente misión</p><h2>¿Tu plataforma tiene un cuello de botella?</h2>
+      <p>Conversemos sobre datos, sistemas, automatización y cómo hacer que todo escale un poco mejor.</p>
+      <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">Escríbeme <span>↗</span></a>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <p>Francisco Fuenzalida · Santiago, Chile</p>
-      <div class="footer-links">
-        <a href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a>
-        <a href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid</a>
-      </div>
-    </div>
-  </footer>
+  <footer><div class="container footer-inner"><p>Francisco Fuenzalida · Data Engineer</p><div class="footer-links"><a href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a><a href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid</a></div></div></footer>
 </body>
 </html>
