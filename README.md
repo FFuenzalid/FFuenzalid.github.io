@@ -1,13 +1,15 @@
-# Francisco Fuenzalida · Data Engineer
+# Francisco Fuenzalida · Ingeniero de optimización
 
-Construyo plataformas de datos y automatizaciones que funcionan fuera del diagrama: con volumen, operación, incidentes y decisiones reales de por medio.
+Me desempeño como Data Engineer, pero mi propósito es optimizar sistemas al límite. Uso datos, software e infraestructura para quitar trabajo repetitivo, entender sistemas y hacer que funcionen mejor.
 
 **Portafolio / CV:** [ffuenzalid.github.io](https://ffuenzalid.github.io/)
 
-## Especialidad
+## Herramientas y especialidad
 
 - Pipelines ETL/ELT, calidad de datos, observabilidad y automatización.
 - Google Cloud Platform, BigQuery, Cloud Run, Cloud Functions y Cloud Storage.
+- Pipelines analíticos de gran escala en GCP.
+- Terraform, Proxmox y Docker para infraestructura y ejecución.
 - Modelado y consulta analítica a escala con **BigQuery** y **ClickHouse**.
 - Python, SQL, Bash, Linux, Docker y Apache Airflow.
 
@@ -15,11 +17,11 @@ Construyo plataformas de datos y automatizaciones que funcionan fuera del diagra
 
 Actualmente soy **Cloud Data Engineer en WOM**, donde trabajo con grandes volúmenes de datos operacionales, KPIs de red, pipelines en GCP, reporting, monitoreo y control de costos. Previamente trabajé en operaciones de datos y Linux en WOM, y como SysAdmin de ServiceNow en CCU.
 
-Mi formación original fue en ingeniería minera: me dejó una mirada sistémica y analítica. Al decidir orientar mi carrera hacia TI, transformé esa base en programación, plataformas de datos y operación de sistemas.
+Ingeniería Civil Industrial me entregó una mirada de procesos, optimización, economía y gestión. Mi relación con la tecnología empezó antes, usando Excel para cálculos de juegos y emulando localmente un servidor de World of Warcraft, donde tuve mis primeras interacciones con MySQL y arquitectura cliente-servidor. Más adelante, automatizar inventario, consumo, stock y costos en Excel me mostró que estaba construyendo productos útiles; de ahí pasé a Python, desarrollo y sistemas de datos. Los datos me permiten tomar decisiones informadas.
 
 ## Laboratorio técnico
 
-También construyo proyectos para comprender la tecnología desde dentro. Tengo un laboratorio local de agentes: Gemma 4 vía Ollama, un agente conectado a OpenAI, APIs locales de voz e imagen y conectores MCP hacia Gmail y otros sistemas. Actualmente experimento con agentes y harnesses, testeando Qwen3.8 en Ollama local. El objetivo es entender cómo se integran modelos, herramientas y servicios; no es un producto comercial.
+También construyo proyectos para comprender la tecnología desde dentro. Tengo un laboratorio local de agentes: Gemma 4 vía Ollama, un agente conectado a OpenAI, APIs locales de voz e imagen, conectores MCP hacia Gmail y otros sistemas, y una base de datos local que almacena eventos geopolíticos. Actualmente experimento con agentes y harnesses, testeando Qwen3.8 en Ollama local. El objetivo es entender cómo se integran modelos, herramientas y servicios; no es un producto comercial.
 
 ## Contacto
 

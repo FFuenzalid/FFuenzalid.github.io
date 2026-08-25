@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Francisco Fuenzalida — CV / Data Engineer</title>
-  <meta name="description" content="Francisco Fuenzalida: Data Engineer en Santiago. Diseño pipelines, plataformas de datos y automatizaciones con GCP, BigQuery, ClickHouse, Python, SQL, Linux y Airflow." />
+  <title>Francisco Fuenzalida — Ingeniero de optimización</title>
+  <meta name="description" content="Francisco Fuenzalida: ingeniero orientado a optimización. Usa datos, software e infraestructura para construir sistemas más eficientes." />
   <meta name="author" content="Francisco Fuenzalida" />
   <meta property="og:title" content="Francisco Fuenzalida — Data Engineer" />
   <meta property="og:description" content="Pipelines, plataformas de datos, optimización y automatización." />
@@ -14,7 +14,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Francisco Fuenzalida",
-    "jobTitle": "Data Engineer",
+    "jobTitle": "Ingeniero de optimización / Data Engineer",
     "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
     "email": "mailto:f.fuenzalida.91@gmail.com",
     "url": "https://ffuenzalid.github.io/",
@@ -35,8 +35,8 @@
       <div class="hero-copy">
         <p class="eyebrow">Santiago, Chile</p>
         <h1>Francisco<br><em>Fuenzalida.</em></h1>
-        <p class="title-line">Data Engineer · sistemas de datos · automatización · infraestructura local</p>
-        <p class="lead">Me cambié de minería a TI porque me interesaban más los sistemas que el mineral. Hoy trabajo con datos, pipelines y bases de datos; fuera de la pega construyo infraestructura local para entender agentes, modelos y herramientas desde dentro.</p>
+        <p class="title-line">Ingeniero de optimización · datos · software · infraestructura</p>
+        <p class="lead">Me desempeño como Data Engineer, pero mi oficio es optimizar al límite. Uso datos, software e infraestructura para entender sistemas, quitar trabajo repetitivo y tomar decisiones informadas. He construido pipelines analíticos de gran escala en GCP.</p>
         <div class="actions">
           <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">correo</a>
           <a class="button" href="https://github.com/FFuenzalid" rel="me">github</a>
@@ -45,11 +45,25 @@
       <aside class="hero-note" aria-label="Nota personal"><p>Ahora mismo</p><ul><li>Optimizando consultas y pipelines.</li><li>Probando agentes y harnesses en local.</li><li>Jugando Factorio, por razones profesionales.</li></ul></aside>
     </section>
 
+    <section class="container section origin-section">
+      <div class="section-heading"><p class="eyebrow">Origen</p><h2>Siempre quise entender cómo se calculan las cosas.</h2></div>
+      <div class="origin-grid">
+        <p class="origin-intro">Mi camino no empezó con un curso de programación. Empezó optimizando juegos, hojas de cálculo y sistemas que tenía cerca.</p>
+        <ol class="origin-list">
+          <li><span>01</span><div><h3>Excel antes de saber que era una herramienta seria</h3><p>De niño aprendí Excel para calcular porcentajes, probabilidades y combinaciones de mis juegos. Me gustaba convertir una duda en una tabla que pudiera probar.</p></div></li>
+          <li><span>02</span><div><h3>Un servidor local de World of Warcraft</h3><p>Al emular un servidor de Burning Crusade aprendí MySQL y, por primera vez, cómo se relacionaban cliente, servidor y base de datos en un sistema real.</p></div></li>
+          <li><span>03</span><div><h3>Ingeniería Civil Industrial</h3><p>Ahí adquirí perspectiva de procesos, optimización, economía y gestión. Esa formación reforzó una idea que sigue guiando mi trabajo: los datos permiten tomar decisiones informadas.</p></div></li>
+          <li><span>04</span><div><h3>Automatización con impacto real</h3><p>Empecé a automatizar planillas por mi cuenta: inventario, consumo, stock, costos y almacenamiento. Cuando un jefe me hizo notar que esa automatización reemplazaba trabajo manual, entendí que ya estaba construyendo un producto útil.</p></div></li>
+          <li><span>05</span><div><h3>Python y el cambio de rumbo</h3><p>Ese punto me llevó a Python. Ahí entendí cuánto me había estado perdiendo: estudié en paralelo, me metí de lleno al desarrollo y desde entonces trabajo construyendo software y sistemas de datos.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
     <section id="homelab" class="container section homelab-section">
       <div class="section-heading">
         <p class="eyebrow">Homelab / OpenClaw</p>
         <h2>Setup local para probar agentes.</h2>
-        <p>Esta es la arquitectura que uso como laboratorio: modelos locales y cloud, servicios propios y herramientas conectadas por MCP. La voy cambiando a medida que pruebo modelos y harnesses.</p>
+        <p>Esta es la arquitectura que uso como laboratorio: modelos locales y cloud, servicios propios, herramientas conectadas por MCP y una base de datos local para eventos geopolíticos. La voy cambiando a medida que pruebo modelos y harnesses.</p>
       </div>
       <div class="mermaid-wrap" aria-label="Diagrama de la arquitectura local de agentes">
         <pre class="mermaid">
@@ -65,6 +79,8 @@ flowchart TD
     OC --> M[MCP / herramientas]
     M --> G[Gmail]
     M --> X[Otros sistemas]
+    GEO[Eventos geopolíticos] --> DB[(Base de datos local)]
+    OC <--> DB
 
     classDef core fill:#172110,stroke:#8dff31,color:#f4f4ee,stroke-width:2px
     classDef local fill:#151a18,stroke:#8dff31,color:#f4f4ee
@@ -73,7 +89,7 @@ flowchart TD
     class OC core
     class L,H,S,STT,TTS,IMG local
     class C cloud
-    class M,G,X tool
+    class M,G,X,GEO,DB tool
         </pre>
       </div>
       <p class="diagram-note">El sistema de alertas de mercado fue otro experimento sobre esta infraestructura. Lo cerré porque no tenía suficiente valor práctico para mantenerlo, no porque no funcionara.</p>
@@ -91,7 +107,7 @@ flowchart TD
         <div class="role-content">
           <div class="role-head"><div><p class="company">WOM</p><h3>Cloud Data Engineer · GCP</h3></div><p class="date">Feb 2025 — hoy</p></div>
           <ul>
-            <li>Diseño, desarrollo y mantengo pipelines ETL/ELT sobre Google Cloud y plataformas internas.</li>
+            <li>Diseño, desarrollo y mantengo pipelines analíticos ETL/ELT de gran escala sobre Google Cloud y plataformas internas.</li>
             <li>Proceso, transformo y valido grandes volúmenes de datos operacionales para KPIs de red: tráfico, disponibilidad y congestión.</li>
             <li>Trabajo con BigQuery, Cloud Run, Cloud Functions, Cloud Storage, Python, SQL y Apache Airflow.</li>
             <li>Automatizo reportes técnicos y ejecutivos; aporto en control de costos, observabilidad y mejora continua.</li>
@@ -132,7 +148,7 @@ flowchart TD
       <div class="section-heading"><p class="eyebrow">Kit de herramientas</p><h2>Optimizar es mi loop favorito.</h2><p>La ingeniería minera me dio una mirada sistémica. Al reorientar mi carrera hacia TI, encontré el lugar donde esa forma de pensar se vuelve código, datos y operación.</p></div>
       <div class="stack-grid">
         <div class="stack-group"><h3>Datos &amp; escala</h3><div class="tags"><span>BigQuery</span><span>ClickHouse</span><span>SQL</span><span>ETL / ELT</span><span>OLAP</span><span>Data Quality</span></div></div>
-        <div class="stack-group"><h3>Cloud &amp; ejecución</h3><div class="tags"><span>GCP</span><span>Cloud Run</span><span>Cloud Functions</span><span>Cloud Storage</span><span>Docker</span><span>Apache Airflow</span></div></div>
+        <div class="stack-group"><h3>Cloud &amp; ejecución</h3><div class="tags"><span>GCP</span><span>BigQuery</span><span>Cloud Run</span><span>Cloud Functions</span><span>Cloud Storage</span><span>Apache Airflow</span><span>Terraform</span><span>Proxmox</span><span>Docker</span></div></div>
         <div class="stack-group"><h3>Sistemas &amp; automatización</h3><div class="tags"><span>Python</span><span>Bash</span><span>Linux</span><span>Observability</span><span>PostgreSQL</span><span>MongoDB</span></div></div>
       </div>
       <p class="factorio-note">Actualmente jugando Factorio, porque aparentemente diseñar una fábrica eficiente también cuenta como descanso.</p>
@@ -145,7 +161,7 @@ flowchart TD
     </section>
   </main>
 
-  <footer><div class="container footer-inner"><p>Francisco Fuenzalida · Data Engineer</p><div class="footer-links"><a href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a><a href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid</a></div></div></footer>
+  <footer><div class="container footer-inner"><p>Francisco Fuenzalida · Ingeniería de optimización</p><div class="footer-links"><a href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a><a href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid</a></div></div></footer>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { background: '#10111a', primaryColor: '#172110', primaryTextColor: '#f4f4ee', primaryBorderColor: '#8dff31', lineColor: '#8dff31', secondaryColor: '#151a18', tertiaryColor: '#1b172a', fontFamily: 'system-ui, sans-serif' }, flowchart: { curve: 'basis' } });
