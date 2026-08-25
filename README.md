@@ -15,9 +15,9 @@ Me desempeño como Data Engineer, pero mi propósito es optimizar sistemas al l�
 
 ## Trayectoria
 
-Actualmente soy **Cloud Data Engineer en WOM**, donde trabajo con grandes volúmenes de datos operacionales, KPIs de red, pipelines en GCP, reporting, monitoreo y control de costos. Previamente trabajé en operaciones de datos y Linux en WOM, y como SysAdmin de ServiceNow en CCU.
+Actualmente trabajo con grandes volúmenes de datos operacionales, KPIs de red, pipelines en GCP, reporting, monitoreo y control de costos. Antes administré infraestructura Linux y Windows, servicios Airflow, MongoDB y APIs Django/REST Framework para extracción de datos de telecomunicaciones; también administré una instancia de ServiceNow, incluyendo usuarios, desarrollos, proyectos y reportería.
 
-Ingeniería Civil Industrial me entregó una mirada de procesos, optimización, economía y gestión. Mi relación con la tecnología empezó antes, usando Excel para cálculos de juegos y emulando localmente un servidor de World of Warcraft, donde tuve mis primeras interacciones con MySQL y arquitectura cliente-servidor. Más adelante, automatizar inventario, consumo, stock y costos en Excel me mostró que estaba construyendo productos útiles; de ahí pasé a Python, desarrollo y sistemas de datos. Los datos me permiten tomar decisiones informadas.
+Mi relación con la tecnología empezó con Excel y juegos, y con un servidor local de World of Warcraft que me llevó a MySQL y a la arquitectura cliente-servidor. La ingeniería me aportó procesos, optimización, economía y gestión. Después llegaron la automatización en Excel, Python, JavaScript, TypeScript, fundamentos de C, ESP32/Arduino, datos IoT, ciberseguridad, Linux, plataformas y cloud. Cada etapa ha sido una forma distinta de entender sistemas complejos. Los datos me permiten tomar decisiones informadas.
 
 ## Laboratorio técnico
 
