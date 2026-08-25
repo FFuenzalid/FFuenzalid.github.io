@@ -28,38 +28,55 @@
 <body>
   <div class="void-orb orb-one" aria-hidden="true"></div>
   <div class="void-orb orb-two" aria-hidden="true"></div>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="wordmark" href="#inicio" aria-label="Inicio">FF<span>://</span>DATA</a>
-      <nav aria-label="Navegación principal">
-        <a href="#experiencia">Experiencia</a>
-        <a href="#laboratorio">Laboratorio</a>
-        <a href="#stack">Stack</a>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header"><div class="container masthead"><a href="#inicio">Francisco Fuenzalida</a><span>CV / portafolio</span></div></header>
 
   <main id="inicio">
     <section class="hero container">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> Santiago, Chile · CV / Portafolio</p>
+        <p class="eyebrow">Santiago, Chile</p>
         <h1>Francisco<br><em>Fuenzalida.</em></h1>
         <p class="title-line">Data Engineer · sistemas de datos · automatización · infraestructura local</p>
-        <p class="lead">Trabajo con pipelines, OLAP, Linux y cloud. También tengo un homelab donde conecto modelos, agentes y servicios porque me gusta entender cómo funcionan las cosas, no solo usarlas.</p>
+        <p class="lead">Me cambié de minería a TI porque me interesaban más los sistemas que el mineral. Hoy trabajo con datos, pipelines y bases de datos; fuera de la pega construyo infraestructura local para entender agentes, modelos y herramientas desde dentro.</p>
         <div class="actions">
-          <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">Hablemos <span>↗</span></a>
-          <a class="button" href="https://github.com/FFuenzalid" rel="me">Ver GitHub</a>
+          <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">correo</a>
+          <a class="button" href="https://github.com/FFuenzalid" rel="me">github</a>
         </div>
       </div>
-      <aside class="status-panel" aria-label="Especialidades profesionales">
-        <p class="panel-label">SYSTEM STATUS</p>
-        <div class="status-line"><span></span> Disponible para desafíos de datos</div>
-        <dl>
-          <div><dt>FOCO</dt><dd>Data platforms &amp; optimization</dd></div>
-          <div><dt>ESCALA</dt><dd>BigQuery · ClickHouse · OLAP</dd></div>
-          <div><dt>TERRENO</dt><dd>Cloud · Linux · Pipelines</dd></div>
-        </dl>
-      </aside>
+      <aside class="hero-note" aria-label="Nota personal"><p>Ahora mismo</p><ul><li>Optimizando consultas y pipelines.</li><li>Probando agentes y harnesses en local.</li><li>Jugando Factorio, por razones profesionales.</li></ul></aside>
+    </section>
+
+    <section id="homelab" class="container section homelab-section">
+      <div class="section-heading">
+        <p class="eyebrow">Homelab / OpenClaw</p>
+        <h2>Setup local para probar agentes.</h2>
+        <p>Esta es la arquitectura que uso como laboratorio: modelos locales y cloud, servicios propios y herramientas conectadas por MCP. La voy cambiando a medida que pruebo modelos y harnesses.</p>
+      </div>
+      <div class="mermaid-wrap" aria-label="Diagrama de la arquitectura local de agentes">
+        <pre class="mermaid">
+flowchart TD
+    P([Prompt / tarea]) --> OC[OpenClaw<br/>orquestador local]
+    OC --> L[Modelos locales<br/>Ollama: Gemma 4 · Qwen3.8]
+    OC --> C[Agente conectado<br/>a OpenAI]
+    OC --> H[Harnesses / flujos<br/>de agentes]
+    OC --> S[Servicios locales]
+    S --> STT[Speech-to-text]
+    S --> TTS[Text-to-speech]
+    S --> IMG[Generación de imágenes]
+    OC --> M[MCP / herramientas]
+    M --> G[Gmail]
+    M --> X[Otros sistemas]
+
+    classDef core fill:#172110,stroke:#8dff31,color:#f4f4ee,stroke-width:2px
+    classDef local fill:#151a18,stroke:#8dff31,color:#f4f4ee
+    classDef cloud fill:#1b172a,stroke:#9b7cff,color:#f4f4ee
+    classDef tool fill:#15151e,stroke:#6b6d78,color:#f4f4ee
+    class OC core
+    class L,H,S,STT,TTS,IMG local
+    class C cloud
+    class M,G,X tool
+        </pre>
+      </div>
+      <p class="diagram-note">El sistema de alertas de mercado fue otro experimento sobre esta infraestructura. Lo cerré porque no tenía suficiente valor práctico para mantenerlo, no porque no funcionara.</p>
     </section>
 
     <section id="experiencia" class="container section experience">
@@ -89,14 +106,15 @@
     </section>
 
     <section id="laboratorio" class="container section lab-section">
-      <div class="section-heading"><p class="eyebrow">Build log · exploración aplicada</p><h2>No solo consumo tecnología.<br>La conecto, la rompo y entiendo cómo opera.</h2></div>
+      <div class="section-heading"><p class="eyebrow">Bitácora personal</p><h2>Lo que estoy construyendo y probando.</h2></div>
       <div class="lab-layout">
         <article class="project-card">
           <p class="project-index">LAB_01</p>
-          <h3>Laboratorio local de agentes IA</h3>
-          <p>Construí un entorno experimental de agentes para entender el ecosistema actual de IA de punta a punta: modelos locales y cloud, herramientas, APIs y automatizaciones.</p>
+          <h3>Laboratorio local de agentes</h3>
+          <p>Un entorno para probar agentes, harnesses, modelos locales y cloud, herramientas, APIs y automatizaciones. La idea es tener las piezas en las manos, no hablar de ellas desde lejos.</p>
           <ul class="project-points">
             <li>Un agente con <strong>Gemma 4</strong> ejecutado localmente mediante Ollama y otro conectado a modelos de OpenAI.</li>
+            <li>Actualmente testeando <strong>Qwen3.8</strong> en Ollama local y distintos harnesses para explorar ejecución, herramientas y flujos de trabajo de agentes.</li>
             <li>Servicios locales para speech-to-text, text-to-speech y generación de imágenes, expuestos como APIs para los agentes.</li>
             <li>Conectores MCP para Gmail y otros sistemas, explorando la interacción segura entre agentes y herramientas.</li>
           </ul>
@@ -128,5 +146,9 @@
   </main>
 
   <footer><div class="container footer-inner"><p>Francisco Fuenzalida · Data Engineer</p><div class="footer-links"><a href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a><a href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid</a></div></div></footer>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { background: '#10111a', primaryColor: '#172110', primaryTextColor: '#f4f4ee', primaryBorderColor: '#8dff31', lineColor: '#8dff31', secondaryColor: '#151a18', tertiaryColor: '#1b172a', fontFamily: 'system-ui, sans-serif' }, flowchart: { curve: 'basis' } });
+  </script>
 </body>
 </html>

@@ -19,7 +19,7 @@ Mi formación original fue en ingeniería minera: me dejó una mirada sistémica
 
 ## Laboratorio técnico
 
-También construyo proyectos para comprender la tecnología desde dentro. Uno de ellos fue un laboratorio local de agentes IA: Gemma 4 vía Ollama, un agente conectado a OpenAI, APIs locales de voz e imagen y conectores MCP hacia Gmail y otros sistemas. El objetivo fue entender cómo se integran modelos, herramientas y servicios; no era un producto comercial.
+También construyo proyectos para comprender la tecnología desde dentro. Tengo un laboratorio local de agentes: Gemma 4 vía Ollama, un agente conectado a OpenAI, APIs locales de voz e imagen y conectores MCP hacia Gmail y otros sistemas. Actualmente experimento con agentes y harnesses, testeando Qwen3.8 en Ollama local. El objetivo es entender cómo se integran modelos, herramientas y servicios; no es un producto comercial.
 
 ## Contacto
 
