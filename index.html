@@ -51,6 +51,7 @@
             <div><dt>AHORA</dt><dd>Data engineering en GCP</dd></div>
             <div><dt>BASE</dt><dd>Procesos · Linux · datos</dd></div>
             <div><dt>LAB</dt><dd>Agentes · modelos locales · MCP</dd></div>
+            <div><dt>EN PREPARACIÓN</dt><dd>Google Cloud PCA</dd></div>
           </dl>
         </aside>
       </div>
@@ -155,26 +156,8 @@
         </div>
         <div class="lab-grid">
           <div class="diagram-panel">
-            <p class="mono-label">ARQUITECTURA SANEADA · SIN TOPOLOGÍA SENSIBLE</p>
-            <pre class="mermaid">
-flowchart LR
-  T([Tarea]) --> H[Harness / contexto]
-  H --> L[Modelos locales<br/>Ollama]
-  H --> C[Modelos cloud]
-  H --> R[Herramientas / MCP]
-  R --> A[APIs locales<br/>voz · imagen]
-  R --> D[(Contexto / eventos)]
-  H --> V[Verificación<br/>logs · revisión humana]
-
-  classDef core fill:#142118,stroke:#3f9b53,color:#edf0e8,stroke-width:2px
-  classDef local fill:#101a12,stroke:#3f9b53,color:#edf0e8
-  classDef cloud fill:#19132a,stroke:#7354b5,color:#edf0e8
-  classDef tool fill:#111912,stroke:#526c53,color:#edf0e8
-  class H core
-  class L,A,D local
-  class C cloud
-  class T,R,V tool
-            </pre>
+            <p class="mono-label">CV DATA · RUNTIME LOCAL Y REVISABLE</p>
+            <img src="assets/cv-data-runtime.svg" alt="Arquitectura conceptual de CV Data: perfil o vacante ingresa a la aplicación, que coordina PostgreSQL y un worker local; el worker consulta modelos mediante Ollama, registra evidencia e historial y entrega el resultado a revisión humana." loading="lazy">
           </div>
           <div class="lab-notes">
             <article><span>01</span><div><h3>Modelos bajo restricciones reales</h3><p>Ollama, familias Qwen y Gemma, cuantización, contexto, latencia y límites de hardware local.</p></div></article>
@@ -182,6 +165,38 @@ flowchart LR
             <article><span>03</span><div><h3>Aprendizaje por fricción</h3><p>Sandboxing, Linux, contenedores, acceso remoto, secretos, respaldos y recuperación: las partes que una demo suele omitir.</p></div></article>
           </div>
         </div>
+        <section class="infra-section" aria-labelledby="infra-title">
+          <div class="infra-copy">
+            <p class="mono-label">INFRAESTRUCTURA PROPIA · PRÁCTICA ACTIVA</p>
+            <h3 id="infra-title">El laboratorio también son las máquinas.</h3>
+            <p>Trabajo de forma intensa con equipos locales, Linux, virtualización y contenedores porque ahí puedo probar una idea completa: desde el modelo, el servicio y la red, hasta el cliente que lo usa. No es una colección de hardware; es un entorno para operar, romper, recuperar y volver a diseñar.</p>
+            <div class="infra-points">
+              <article><span>LOCAL</span><p>VMs, Proxmox, Docker, almacenamiento, redes segmentadas, respaldos y servicios que puedo observar y reconstruir.</p></article>
+              <article><span>HARNESSES</span><p>Codex y otros harnesses de programación —incluyendo pruebas con Picode y DeepSeek— para comparar flujos de agentes, permisos, revisión y trabajo sobre repositorios reales.</p></article>
+              <article><span>WEB / VISUAL</span><p>HTML, CSS y JavaScript para interfaces cuidadas; Django/DRF para aplicaciones. También he explorado Three.js para llevar datos y objetos a visualización 3D web.</p></article>
+            </div>
+          </div>
+          <figure class="vector-system">
+            <figcaption>VECTOR SANDBOX · representación conceptual</figcaption>
+            <svg viewBox="0 0 620 470" role="img" aria-labelledby="vector-title vector-desc">
+              <title id="vector-title">Mapa conceptual de un laboratorio local</title>
+              <desc id="vector-desc">Un sistema visual que conecta estaciones locales, máquinas virtuales, modelos, servicios y navegador, sin representar una red real.</desc>
+              <defs>
+                <linearGradient id="fel-line" x1="0" x2="1"><stop stop-color="#347c43"/><stop offset="1" stop-color="#9bd88a"/></linearGradient>
+                <filter id="fel-glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <g class="vector-grid"><path d="M40 80H580M40 155H580M40 230H580M40 305H580M40 380H580"/><path d="M100 38V425M220 38V425M340 38V425M460 38V425"/></g>
+              <g class="vector-links" filter="url(#fel-glow)"><path d="M145 170C205 170 205 115 270 115"/><path d="M145 170C205 170 210 260 286 260"/><path d="M350 115C430 115 420 180 485 180"/><path d="M365 260C440 260 430 330 500 330"/><path d="M145 170C140 280 230 360 300 360"/></g>
+              <g class="vector-node node-local"><rect x="65" y="125" width="160" height="90" rx="5"/><text x="85" y="155">LOCAL MACHINES</text><text class="sub" x="85" y="180">Linux · Docker</text><text class="sub" x="85" y="199">VMs · storage</text></g>
+              <g class="vector-node node-core"><rect x="270" y="72" width="150" height="86" rx="5"/><text x="290" y="105">LOCAL MODELS</text><text class="sub" x="290" y="131">Ollama · APIs</text></g>
+              <g class="vector-node node-core"><rect x="285" y="220" width="155" height="82" rx="5"/><text x="305" y="251">AGENT LAYER</text><text class="sub" x="305" y="276">harnesses · tools</text></g>
+              <g class="vector-node node-void"><rect x="470" y="140" width="105" height="80" rx="5"/><text x="489" y="173">CLOUD</text><text class="sub" x="489" y="196">services</text></g>
+              <g class="vector-node node-web"><rect x="470" y="290" width="105" height="80" rx="5"/><text x="487" y="322">WEB UI</text><text class="sub" x="487" y="346">HTML · JS</text></g>
+              <g class="vector-node node-data"><rect x="250" y="335" width="150" height="70" rx="5"/><text x="271" y="365">DATA / GIT</text><text class="sub" x="271" y="387">state · diffs</text></g>
+              <circle class="vector-pulse" cx="145" cy="170" r="5"/><circle class="vector-pulse" cx="350" cy="115" r="5"/><circle class="vector-pulse" cx="365" cy="260" r="5"/>
+            </svg>
+          </figure>
+        </section>
         <article class="improvement-loop">
           <div class="loop-copy">
             <p class="mono-label">MEJORA CONTINUA · EN DESARROLLO</p>
@@ -194,26 +209,10 @@ flowchart LR
             </ul>
             <p class="loop-models">Gemma 4 asiste extracción y traducción; Tev1 local explora clasificación y evaluación estructurada. Las inferencias se registran con su configuración y no se presentan como probabilidades calibradas.</p>
           </div>
-          <div class="loop-diagram">
-            <pre class="mermaid">
-flowchart TD
-  S[Señales del producto<br/>feedback · fallas · backlog] --> O[LLM operador<br/>observa y acota]
-  O --> T[Tarea verificable<br/>criterio de aceptación]
-  T --> P[LLM programador<br/>propone cambio]
-  P --> Q[Checks · pruebas · diff]
-  Q --> H[Revisión humana]
-  H -->|integrar| R[Producto / evidencia]
-  H -->|revertir o ajustar| O
-  R --> S
-
-  classDef core fill:#142118,stroke:#3f9b53,color:#edf0e8,stroke-width:2px
-  classDef human fill:#19132a,stroke:#7354b5,color:#edf0e8
-  classDef edge fill:#111912,stroke:#526c53,color:#edf0e8
-  class O,P core
-  class H human
-  class S,T,Q,R edge
-            </pre>
-          </div>
+          <figure class="loop-diagram">
+            <figcaption>LOOP DE INGENIERÍA · ARTEFACTOS, PRUEBAS Y APROBACIÓN</figcaption>
+            <img src="assets/harness-loop.svg" alt="Loop de ingeniería: señales del producto pasan a un LLM operador, un contrato de tarea, un worktree aislado, un LLM programador, pruebas, revisión humana y Git; la evidencia vuelve a alimentar el ciclo." loading="lazy">
+          </figure>
         </article>
         <div class="lab-footnote"><span>NOTA</span> Un experimento de alertas de mercado se cerró cuando su costo de mantenimiento superó su utilidad. Decidir no operar un sistema sin valor suficiente también es una decisión de ingeniería.</div>
       </div>
@@ -223,7 +222,7 @@ flowchart TD
       <div class="section-intro compact"><p class="kicker">Inventario técnico</p><h2 id="stack-title">Herramientas con contexto.</h2></div>
       <div class="tool-details">
         <details open><summary><span>Datos y analítica</span><b>BigQuery · ClickHouse · SQL · Airflow</b></summary><p>ETL/ELT, procedimientos, modelos analíticos, particionamiento, validación, calidad de datos y reportería.</p></details>
-        <details><summary><span>Cloud y plataforma</span><b>GCP · Docker · Terraform · Proxmox</b></summary><p>Cloud Run, Functions, Storage, servicios, virtualización, infraestructura reproducible y operación.</p></details>
+        <details><summary><span>Cloud y plataforma</span><b>GCP · Docker · Terraform · Proxmox</b></summary><p>Cloud Run, Functions, Storage, servicios, virtualización, infraestructura reproducible y operación. Preparación activa para Google Cloud Professional Cloud Architect (PCA).</p></details>
         <details><summary><span>Software y APIs</span><b>Python · Django · DRF · JS/TS</b></summary><p>Automatización, modelos relacionales, APIs, integración de sistemas y herramientas internas.</p></details>
         <details><summary><span>Sistemas e infraestructura</span><b>Linux · PostgreSQL · MySQL · MongoDB</b></summary><p>Servicios, logs, monitoreo, respaldos, redes, cargas de datos y continuidad operacional.</p></details>
       </div>
@@ -238,9 +237,5 @@ flowchart TD
   </main>
 
   <footer><div class="shell footer-inner"><span>Francisco Fuenzalida</span><span>Data · platforms · systems</span></div></footer>
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { background: '#0b120c', primaryColor: '#142118', primaryTextColor: '#edf0e8', primaryBorderColor: '#3f9b53', lineColor: '#3f9b53', secondaryColor: '#101a12', tertiaryColor: '#19132a', fontFamily: 'system-ui, sans-serif' }, flowchart: { curve: 'basis' } });
-  </script>
 </body>
 </html>

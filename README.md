@@ -19,11 +19,17 @@ Aplicación local en Django y PostgreSQL para gestionar perfiles, vacantes, extr
 
 El proyecto también explora un loop de mejora continua en desarrollo: un LLM operador convierte señales del producto en tareas acotadas y un LLM programador propone cambios en el repositorio. Los checks y la revisión humana son una barrera obligatoria antes de integrar cualquier cambio.
 
+## Laboratorio de infraestructura
+
+El portafolio también documenta una práctica activa con máquinas locales, Linux, Proxmox, VMs, Docker, modelos servidos con Ollama y harnesses de programación como Codex. El objetivo es comprender y operar sistemas completos —modelo, servicio, datos, herramientas, permisos, logs y recuperación— sin publicar detalles sensibles de la red local.
+
 Las experiencias corporativas se describen a nivel funcional por confidencialidad. Los proyectos de laboratorio se presentan como exploración técnica, nunca como productos comerciales en producción.
 
 ## Tecnologías destacadas
 
 `Python` · `SQL` · `BigQuery` · `Apache Airflow` · `GCP` · `Linux` · `ClickHouse` · `Docker` · `Terraform` · `Django` · `REST APIs` · `Ollama` · `MCP`
+
+Preparación activa para la certificación **Google Cloud Professional Cloud Architect (PCA)**. No se presenta como una certificación obtenida.
 
 ## Contacto
 
