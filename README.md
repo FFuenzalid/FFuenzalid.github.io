@@ -13,6 +13,12 @@ El portafolio está organizado por capas:
 - Arquitectura saneada del homelab de IA, sin exponer secretos ni topología sensible.
 - Inventario técnico con contexto de uso.
 
+## Proyecto activo: CV Data
+
+Aplicación local en Django y PostgreSQL para gestionar perfiles, vacantes, extracción desde PDF, validación humana, matching basado en evidencia, postulaciones y analítica. Las inferencias se procesan en segundo plano y conservan trazabilidad de configuración y resultado.
+
+El proyecto también explora un loop de mejora continua en desarrollo: un LLM operador convierte señales del producto en tareas acotadas y un LLM programador propone cambios en el repositorio. Los checks y la revisión humana son una barrera obligatoria antes de integrar cualquier cambio.
+
 Las experiencias corporativas se describen a nivel funcional por confidencialidad. Los proyectos de laboratorio se presentan como exploración técnica, nunca como productos comerciales en producción.
 
 ## Tecnologías destacadas

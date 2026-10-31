@@ -14,6 +14,7 @@
   {"@context":"https://schema.org","@type":"Person","name":"Francisco Fuenzalida","jobTitle":"Data Engineer","address":{"@type":"PostalAddress","addressLocality":"Santiago","addressCountry":"CL"},"email":"mailto:f.fuenzalida.91@gmail.com","url":"https://ffuenzalid.github.io/","sameAs":["https://github.com/FFuenzalid"],"knowsAbout":["Data Engineering","Google Cloud Platform","BigQuery","Apache Airflow","Python","SQL","Linux","ClickHouse","Automation","Applied AI"]}
   </script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="qa.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -119,6 +120,12 @@
       </div>
       <div class="case-grid">
         <article class="case-card case-card-featured">
+          <div class="card-top"><span class="pill lab">laboratorio activo</span><span>00</span></div>
+          <h3>CV Data: decisiones revisables, no cajas negras</h3>
+          <p>Producto local para ingresar perfiles y vacantes, extraer información desde PDF, validar evidencia, ejecutar compatibilidades y seguir postulaciones. El modelo asiste; la decisión y la revisión permanecen en personas.</p>
+          <dl class="case-meta"><div><dt>ARQUITECTURA</dt><dd>Django · PostgreSQL · worker</dd></div><div><dt>FOCO</dt><dd>evidencia · auditoría · privacidad</dd></div></dl>
+        </article>
+        <article class="case-card case-card-featured">
           <div class="card-top"><span class="pill production">experiencia profesional</span><span>01</span></div>
           <h3>Pipelines que se pueden explicar</h3>
           <p>Integración de fuentes operacionales, reglas de validación y modelos analíticos para que una diferencia entre sistemas se pueda investigar, no solo esconder en un dashboard.</p>
@@ -175,6 +182,39 @@ flowchart LR
             <article><span>03</span><div><h3>Aprendizaje por fricción</h3><p>Sandboxing, Linux, contenedores, acceso remoto, secretos, respaldos y recuperación: las partes que una demo suele omitir.</p></div></article>
           </div>
         </div>
+        <article class="improvement-loop">
+          <div class="loop-copy">
+            <p class="mono-label">MEJORA CONTINUA · EN DESARROLLO</p>
+            <h3>Un LLM observa el producto;<br>otro trabaja el cambio.</h3>
+            <p>Estoy desarrollando un loop de ingeniería para CV Data: un agente operador interpreta señales del sistema y convierte una necesidad en una tarea acotada; un agente programador propone el cambio en el repositorio. El ciclo termina en verificación y aprobación humana, no en despliegue autónomo.</p>
+            <ul>
+              <li><strong>Operador:</strong> contexto del producto, evidencia, incidencias y backlog.</li>
+              <li><strong>Programador:</strong> implementación enfocada, diff y trazabilidad en Git.</li>
+              <li><strong>Persona:</strong> revisión, pruebas, decisión de integrar o revertir.</li>
+            </ul>
+            <p class="loop-models">Gemma 4 asiste extracción y traducción; Tev1 local explora clasificación y evaluación estructurada. Las inferencias se registran con su configuración y no se presentan como probabilidades calibradas.</p>
+          </div>
+          <div class="loop-diagram">
+            <pre class="mermaid">
+flowchart TD
+  S[Señales del producto<br/>feedback · fallas · backlog] --> O[LLM operador<br/>observa y acota]
+  O --> T[Tarea verificable<br/>criterio de aceptación]
+  T --> P[LLM programador<br/>propone cambio]
+  P --> Q[Checks · pruebas · diff]
+  Q --> H[Revisión humana]
+  H -->|integrar| R[Producto / evidencia]
+  H -->|revertir o ajustar| O
+  R --> S
+
+  classDef core fill:#142118,stroke:#3f9b53,color:#edf0e8,stroke-width:2px
+  classDef human fill:#19132a,stroke:#7354b5,color:#edf0e8
+  classDef edge fill:#111912,stroke:#526c53,color:#edf0e8
+  class O,P core
+  class H human
+  class S,T,Q,R edge
+            </pre>
+          </div>
+        </article>
         <div class="lab-footnote"><span>NOTA</span> Un experimento de alertas de mercado se cerró cuando su costo de mantenimiento superó su utilidad. Decidir no operar un sistema sin valor suficiente también es una decisión de ingeniería.</div>
       </div>
     </section>

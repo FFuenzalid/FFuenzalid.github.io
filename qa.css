@@ -1,0 +1,43 @@
+/* Visual QA refinements and continuous-improvement case. */
+.brand { color: var(--text); }
+.case-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pill.lab { border-color: rgba(87, 179, 102, .45); color: #a7dba3; }
+
+.improvement-loop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  background: radial-gradient(circle at 90% 0, rgba(75, 47, 135, .19), transparent 45%), rgba(8, 14, 9, .72);
+}
+
+.loop-copy h3 {
+  margin: .2rem 0 1rem;
+  font-size: clamp(1.45rem, 2.8vw, 2.4rem);
+  line-height: 1.06;
+}
+
+.loop-copy > p:not(.mono-label) { color: var(--soft); }
+.loop-copy ul { margin: 1rem 0; padding-left: 1.15rem; color: var(--muted); font-size: .92rem; }
+.loop-copy li { margin: .35rem 0; }
+.loop-copy strong { color: var(--text); }
+.loop-models { margin-top: 1.1rem !important; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .86rem !important; }
+
+.loop-diagram {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(5, 10, 6, .6);
+}
+
+.loop-diagram .mermaid { min-width: 580px; }
+
+@media (max-width: 780px) {
+  .nav-shell nav { display: none; }
+  .case-grid, .improvement-loop { grid-template-columns: 1fr; }
+  .loop-diagram .mermaid { min-width: 520px; }
+}
