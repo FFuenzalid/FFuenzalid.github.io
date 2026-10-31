@@ -4,6 +4,8 @@ Este repositorio contiene mi portafolio estático, publicado en [ffuenzalid.gith
 
 Trabajo en ingeniería de datos, plataformas, automatización e infraestructura. Mi experiencia profesional reúne pipelines ETL/ELT, GCP, BigQuery, Linux, Airflow, SQL, observabilidad y operación de sistemas. En paralelo, mantengo un laboratorio técnico para experimentar con modelos locales, agentes, MCP y herramientas de IA aplicada.
 
+Una experiencia fundacional en Track-TI (desde 2019, colaboraciones por servicios) combinó análisis de vulnerabilidades, CVEs, guías de mitigación, máquinas virtuales, honeypots, contenedores y visualización de eventos con Elastic Stack. Se presenta como práctica defensiva y de aprendizaje, sin exponer clientes ni infraestructura.
+
 ## El sitio
 
 El portafolio está organizado por capas:
