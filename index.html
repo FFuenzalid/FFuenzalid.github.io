@@ -10,6 +10,18 @@
   <meta property="og:description" content="Ingeniería de datos, infraestructura, automatización y laboratorios de IA aplicada.">
   <meta property="og:type" content="profile">
   <title>Francisco Fuenzalida — Data, platforms & systems</title>
+  <script>
+    // Una recarga siempre comienza arriba; los enlaces directos con #sección siguen funcionando.
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    const navigation = performance.getEntriesByType('navigation')[0];
+    if (navigation && navigation.type === 'reload') {
+      history.replaceState(null, '', location.pathname + location.search);
+      window.addEventListener('pageshow', () => {
+        window.scrollTo(0, 0);
+        requestAnimationFrame(() => window.scrollTo(0, 0));
+      }, { once: true });
+    }
+  </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Francisco Fuenzalida","jobTitle":"Data Engineer","address":{"@type":"PostalAddress","addressLocality":"Santiago","addressCountry":"CL"},"email":"mailto:f.fuenzalida.91@gmail.com","url":"https://ffuenzalid.github.io/","sameAs":["https://github.com/FFuenzalid"],"knowsAbout":["Data Engineering","Google Cloud Platform","BigQuery","Apache Airflow","Python","SQL","Linux","ClickHouse","Automation","Applied AI"]}
   </script>
