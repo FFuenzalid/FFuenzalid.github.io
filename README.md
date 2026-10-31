@@ -1,30 +1,25 @@
-# Francisco Fuenzalida · Ingeniero de optimización
+# Francisco Fuenzalida · Data, platforms & systems
 
-Me desempeño como Data Engineer, pero mi propósito es optimizar sistemas al límite. Uso datos, software e infraestructura para quitar trabajo repetitivo, entender sistemas y hacer que funcionen mejor.
+Este repositorio contiene mi portafolio estático, publicado en [ffuenzalid.github.io](https://ffuenzalid.github.io/).
 
-**Portafolio / CV:** [ffuenzalid.github.io](https://ffuenzalid.github.io/)
+Trabajo en ingeniería de datos, plataformas, automatización e infraestructura. Mi experiencia profesional reúne pipelines ETL/ELT, GCP, BigQuery, Linux, Airflow, SQL, observabilidad y operación de sistemas. En paralelo, mantengo un laboratorio técnico para experimentar con modelos locales, agentes, MCP y herramientas de IA aplicada.
 
-## Herramientas y especialidad
+## El sitio
 
-- Pipelines ETL/ELT, calidad de datos, observabilidad y automatización.
-- Google Cloud Platform, BigQuery, Cloud Run, Cloud Functions y Cloud Storage.
-- Pipelines analíticos de gran escala en GCP.
-- Terraform, Proxmox y Docker para infraestructura y ejecución.
-- Modelado y consulta analítica a escala con **BigQuery** y **ClickHouse**.
-- Python, SQL, Bash, Linux, Docker y Apache Airflow.
+El portafolio está organizado por capas:
 
-## Trayectoria
+- Experiencia profesional y contextos de operación.
+- Casos de trabajo, diferenciando producción, histórico y laboratorio.
+- Arquitectura saneada del homelab de IA, sin exponer secretos ni topología sensible.
+- Inventario técnico con contexto de uso.
 
-Actualmente trabajo con grandes volúmenes de datos operacionales, KPIs de red, pipelines en GCP, reporting, monitoreo y control de costos. Antes administré infraestructura Linux y Windows, servicios Airflow, MongoDB y APIs Django/REST Framework para extracción de datos de telecomunicaciones; también administré una instancia de ServiceNow, incluyendo usuarios, desarrollos, proyectos y reportería.
+Las experiencias corporativas se describen a nivel funcional por confidencialidad. Los proyectos de laboratorio se presentan como exploración técnica, nunca como productos comerciales en producción.
 
-Mi relación con la tecnología empezó con Excel y juegos, y con un servidor local de World of Warcraft que me llevó a MySQL y a la arquitectura cliente-servidor. La ingeniería me aportó procesos, optimización, economía y gestión. Después llegaron la automatización en Excel, Python, JavaScript, TypeScript, fundamentos de C, ESP32/Arduino, datos IoT, ciberseguridad, Linux, plataformas y cloud. Cada etapa ha sido una forma distinta de entender sistemas complejos. Los datos me permiten tomar decisiones informadas.
+## Tecnologías destacadas
 
-## Laboratorio técnico
-
-También construyo proyectos para comprender la tecnología desde dentro. Tengo un laboratorio local de agentes: Gemma 4 vía Ollama, un agente conectado a OpenAI, APIs locales de voz e imagen, conectores MCP hacia Gmail y otros sistemas, y una base de datos local que almacena eventos geopolíticos. Actualmente experimento con agentes y harnesses, testeando Qwen3.8 en Ollama local. El objetivo es entender cómo se integran modelos, herramientas y servicios; no es un producto comercial.
+`Python` · `SQL` · `BigQuery` · `Apache Airflow` · `GCP` · `Linux` · `ClickHouse` · `Docker` · `Terraform` · `Django` · `REST APIs` · `Ollama` · `MCP`
 
 ## Contacto
 
 - [f.fuenzalida.91@gmail.com](mailto:f.fuenzalida.91@gmail.com)
 - [github.com/FFuenzalid](https://github.com/FFuenzalid)
-- Santiago, Chile

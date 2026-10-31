@@ -1,166 +1,203 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Francisco Fuenzalida — Ingeniero de optimización</title>
-  <meta name="description" content="Francisco Fuenzalida: ingeniero orientado a optimización. Usa datos, software e infraestructura para construir sistemas más eficientes." />
-  <meta name="author" content="Francisco Fuenzalida" />
-  <meta property="og:title" content="Francisco Fuenzalida — Data Engineer" />
-  <meta property="og:description" content="Pipelines, plataformas de datos, optimización y automatización." />
-  <meta property="og:type" content="profile" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060a07">
+  <meta name="description" content="Francisco Fuenzalida: ingeniería de datos, plataformas, automatización, Linux, GCP y sistemas de IA aplicados.">
+  <meta name="author" content="Francisco Fuenzalida">
+  <meta property="og:title" content="Francisco Fuenzalida — Data, platforms & systems">
+  <meta property="og:description" content="Ingeniería de datos, infraestructura, automatización y laboratorios de IA aplicada.">
+  <meta property="og:type" content="profile">
+  <title>Francisco Fuenzalida — Data, platforms & systems</title>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Francisco Fuenzalida",
-    "jobTitle": "Ingeniero de optimización / Data Engineer",
-    "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
-    "email": "mailto:f.fuenzalida.91@gmail.com",
-    "url": "https://ffuenzalid.github.io/",
-    "sameAs": ["https://github.com/FFuenzalid"],
-    "knowsAbout": ["Python", "SQL", "Linux", "Google Cloud Platform", "BigQuery", "ClickHouse", "Apache Airflow", "ETL", "ELT", "Data Engineering", "Observability", "Docker", "Ollama", "MCP"]
-  }
+  {"@context":"https://schema.org","@type":"Person","name":"Francisco Fuenzalida","jobTitle":"Data Engineer","address":{"@type":"PostalAddress","addressLocality":"Santiago","addressCountry":"CL"},"email":"mailto:f.fuenzalida.91@gmail.com","url":"https://ffuenzalid.github.io/","sameAs":["https://github.com/FFuenzalid"],"knowsAbout":["Data Engineering","Google Cloud Platform","BigQuery","Apache Airflow","Python","SQL","Linux","ClickHouse","Automation","Applied AI"]}
   </script>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="void-orb orb-one" aria-hidden="true"></div>
-  <div class="void-orb orb-two" aria-hidden="true"></div>
-  <header class="site-header"><div class="container masthead"><a href="#inicio">Francisco Fuenzalida</a><span>CV / portafolio</span></div></header>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="aura aura-fel" aria-hidden="true"></div>
+  <div class="aura aura-void" aria-hidden="true"></div>
 
-  <main id="inicio">
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">Santiago, Chile</p>
-        <h1>Francisco<br><em>Fuenzalida.</em></h1>
-        <p class="title-line">Ingeniero de optimización · datos · software · infraestructura</p>
-        <p class="lead">Me desempeño como Data Engineer, pero mi oficio es optimizar al límite. Uso datos, software e infraestructura para entender sistemas, quitar trabajo repetitivo y tomar decisiones informadas. He construido pipelines analíticos de gran escala en GCP.</p>
-        <div class="actions">
-          <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">correo</a>
-          <a class="button" href="https://github.com/FFuenzalid" rel="me">github</a>
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="brand" href="#inicio">francisco<span>.</span>fuenzalida</a>
+      <nav aria-label="Navegación principal">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#casos">Casos</a>
+        <a href="#lab">Laboratorio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero shell">
+      <p class="kicker"><span class="live-dot"></span> Santiago, Chile · disponible para conversar</p>
+      <div class="hero-layout">
+        <div>
+          <h1>Ingeniería para<br><em>sistemas que importan.</em></h1>
+          <p class="hero-lead">Trabajo en datos, software e infraestructura. Mi interés está en entender el sistema completo: de dónde nacen los datos, qué falla en producción, qué cuesta mantener y cómo convertir trabajo repetitivo en una operación confiable.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experiencia">ver experiencia <span>↓</span></a>
+            <a class="button" href="mailto:f.fuenzalida.91@gmail.com">contactar</a>
+          </div>
         </div>
+        <aside class="status-card" aria-label="Perfil en breve">
+          <p class="mono-label">EN BREVE</p>
+          <dl>
+            <div><dt>AHORA</dt><dd>Data engineering en GCP</dd></div>
+            <div><dt>BASE</dt><dd>Procesos · Linux · datos</dd></div>
+            <div><dt>LAB</dt><dd>Agentes · modelos locales · MCP</dd></div>
+          </dl>
+        </aside>
+      </div>
+      <div class="domain-rail" aria-label="Dominios de trabajo">
+        <a href="#experiencia"><span>01</span> plataformas de datos</a>
+        <a href="#casos"><span>02</span> sistemas operables</a>
+        <a href="#lab"><span>03</span> IA aplicada</a>
       </div>
     </section>
 
-    <section class="container section origin-section">
-      <div class="section-heading"><p class="eyebrow">Trayectoria técnica</p><h2>Capas que se fueron sumando.</h2></div>
-      <div class="origin-grid">
-        <p class="origin-intro">Procesos, datos, infraestructura y software: distintas capas para resolver problemas de un mismo sistema.</p>
-        <ol class="origin-list">
-          <li><span>01</span><div><h3>Modelamiento y automatización</h3><p>Excel fue el punto de partida para modelar porcentajes, probabilidades, inventario, consumo, stock, costos y almacenamiento; una primera forma de llevar procesos a un sistema reproducible.</p></div></li>
-          <li><span>02</span><div><h3>Datos y arquitectura cliente-servidor</h3><p>La emulación de un servidor local de World of Warcraft llevó a MySQL y a una primera mirada de cómo servicios, datos y reglas deben conversar dentro de una arquitectura cliente-servidor.</p></div></li>
-          <li><span>03</span><div><h3>Procesos y optimización</h3><p>Ingeniería Civil Industrial aportó procesos, optimización, economía y gestión. Los datos no reemplazan el juicio: permiten tomar decisiones informadas.</p></div></li>
-          <li><span>04</span><div><h3>Desarrollo</h3><p>Python amplió la automatización hacia software; después se sumaron JavaScript, TypeScript y fundamentos de C para abordar distintos tipos de problemas y entornos.</p></div></li>
-          <li><span>05</span><div><h3>IoT y telemetría</h3><p>ESP32, Arduino y datos IoT aplicados a problemas reales de comunicación de sensores, caudales en relaves y niveles de agua en almacenamiento.</p></div></li>
-          <li><span>06</span><div><h3>Seguridad, operación y cloud</h3><p>Docker, honeypots, exploits y fallas comunes; luego Linux, plataformas, APIs, pipelines, bases de datos y cloud. Cada capa mejoró la comprensión de la siguiente.</p></div></li>
-        </ol>
+    <section id="experiencia" class="section shell">
+      <div class="section-intro">
+        <p class="kicker">Experiencia profesional</p>
+        <h2>Producción antes que promesas.</h2>
+        <p>Mi experiencia une desarrollo, operación y análisis. El detalle se mantiene funcional: suficiente para explicar el tipo de problemas que resuelvo, sin revelar información interna.</p>
+      </div>
+      <div class="experience-list">
+        <details class="experience" open>
+          <summary><span class="role-no">01</span><span class="role-name"><small>WOM · Feb 2025 — actual</small>Cloud Data Engineer · GCP</span><span class="summary-mark">+</span></summary>
+          <div class="experience-body">
+            <p>Diseño y operación de pipelines ETL/ELT y procesos de datos operacionales en Google Cloud.</p>
+            <ul>
+              <li>Transformación, validación y conciliación de fuentes para análisis de KPIs de red, tráfico, disponibilidad y congestión.</li>
+              <li>BigQuery, Cloud Run, Cloud Functions, Cloud Storage, Python, SQL y Apache Airflow.</li>
+              <li>Reportería técnica y ejecutiva, calidad de datos, observabilidad y control de costos cloud.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="experience">
+          <summary><span class="role-no">02</span><span class="role-name"><small>WOM · 2023 — Feb 2025</small>Performance Network Data Operations Engineer</span><span class="summary-mark">+</span></summary>
+          <div class="experience-body">
+            <p>Operación de plataformas de datos y servicios internos en Linux para performance de red.</p>
+            <ul>
+              <li>Procesos batch, Airflow, Python, SQL, logs, monitoreo y continuidad operacional.</li>
+              <li>Trabajo con cargas, consulta y validación de información operacional en bases de datos y servicios internos.</li>
+              <li>APIs de extracción de datos de telecomunicaciones con Django y Django REST Framework.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="experience">
+          <summary><span class="role-no">03</span><span class="role-name"><small>CCU · 2021 — 2023</small>SysAdmin · ServiceNow</span><span class="summary-mark">+</span></summary>
+          <div class="experience-body">
+            <p>Administración y evolución de una plataforma de gestión de servicios.</p>
+            <ul>
+              <li>Incidentes, requerimientos, SLA, usuarios, desarrollos, proyectos y reportería operacional.</li>
+              <li>Coordinación técnica con proveedores y soporte a iniciativas de transformación digital y mejora de procesos.</li>
+            </ul>
+          </div>
+        </details>
       </div>
     </section>
 
-    <section id="homelab" class="container section homelab-section">
-      <div class="section-heading">
-        <p class="eyebrow">Homelab / OpenClaw</p>
-        <h2>Setup local para probar agentes.</h2>
-        <p>Esta es la arquitectura que uso como laboratorio: modelos locales y cloud, servicios propios, herramientas conectadas por MCP y una base de datos local para eventos geopolíticos. La voy cambiando a medida que pruebo modelos y harnesses.</p>
+    <section class="section shell capability-section" aria-labelledby="capabilities-title">
+      <div class="section-intro compact"><p class="kicker">Capacidades</p><h2 id="capabilities-title">Trabajo a través de capas.</h2></div>
+      <div class="capability-grid">
+        <article><span class="cap-index">DATA</span><h3>Analítica y pipelines</h3><p>SQL, Python, BigQuery, Airflow, ETL/ELT, validación, reporting, costo y observabilidad.</p></article>
+        <article><span class="cap-index">PLATFORM</span><h3>Sistemas operables</h3><p>Linux, Docker, APIs, bases de datos, virtualización, automatización y recuperación.</p></article>
+        <article><span class="cap-index">AI / LAB</span><h3>IA aplicada con criterio</h3><p>Modelos locales, herramientas, MCP, agentes y evaluación sin confundir exploración con producción.</p></article>
       </div>
-      <div class="mermaid-wrap" aria-label="Diagrama de la arquitectura local de agentes">
-        <pre class="mermaid">
-flowchart TD
-    P([Prompt / tarea]) --> OC[OpenClaw<br/>orquestador local]
-    OC --> L[Modelos locales<br/>Ollama: Gemma 4 · Qwen3.8]
-    OC --> C[Agente conectado<br/>a OpenAI]
-    OC --> H[Harnesses / flujos<br/>de agentes]
-    OC --> S[Servicios locales]
-    S --> STT[Speech-to-text]
-    S --> TTS[Text-to-speech]
-    S --> IMG[Generación de imágenes]
-    OC --> M[MCP / herramientas]
-    M --> G[Gmail]
-    M --> X[Otros sistemas]
-    GEO[Eventos geopolíticos] --> DB[(Base de datos local)]
-    OC <--> DB
-
-    classDef core fill:#142118,stroke:#3f9b53,color:#edf0e8,stroke-width:2px
-    classDef local fill:#101a12,stroke:#3f9b53,color:#edf0e8
-    classDef cloud fill:#19132a,stroke:#7354b5,color:#edf0e8
-    classDef tool fill:#111912,stroke:#526c53,color:#edf0e8
-    class OC core
-    class L,H,S,STT,TTS,IMG local
-    class C cloud
-    class M,G,X,GEO,DB tool
-        </pre>
-      </div>
-      <p class="diagram-note">El sistema de alertas de mercado fue otro experimento sobre esta infraestructura. Lo cerré porque no tenía suficiente valor práctico para mantenerlo, no porque no funcionara.</p>
     </section>
 
-    <section id="experiencia" class="container section experience">
-      <div class="section-heading">
-        <p class="eyebrow">Experiencia profesional</p>
-        <h2>Datos, operación e infraestructura.</h2>
-        <p>He trabajado en el punto donde conviven infraestructura, servicios, operación y analítica: sistemas que tienen que responder en producción y datos que deben llegar bien, a tiempo y servir para decidir.</p>
+    <section id="casos" class="section shell">
+      <div class="section-intro">
+        <p class="kicker">Casos y práctica</p>
+        <h2>Problemas, restricciones, decisiones.</h2>
+        <p>El stack importa cuando está al servicio de una situación concreta. Estos casos describen tipos de trabajo; los contextos corporativos se resumen por confidencialidad.</p>
       </div>
+      <div class="case-grid">
+        <article class="case-card case-card-featured">
+          <div class="card-top"><span class="pill production">experiencia profesional</span><span>01</span></div>
+          <h3>Pipelines que se pueden explicar</h3>
+          <p>Integración de fuentes operacionales, reglas de validación y modelos analíticos para que una diferencia entre sistemas se pueda investigar, no solo esconder en un dashboard.</p>
+          <dl class="case-meta"><div><dt>DOMINIO</dt><dd>datos · telecom</dd></div><div><dt>FOCO</dt><dd>calidad · trazabilidad · costo</dd></div></dl>
+        </article>
+        <article class="case-card">
+          <div class="card-top"><span class="pill production">experiencia profesional</span><span>02</span></div>
+          <h3>Operar también es ingeniería</h3>
+          <p>Linux, jobs batch, logs, bases de datos y APIs. La continuidad depende de observar, documentar, respaldar y entender las restricciones del sistema.</p>
+          <dl class="case-meta"><div><dt>DOMINIO</dt><dd>plataformas</dd></div><div><dt>FOCO</dt><dd>operación · recuperabilidad</dd></div></dl>
+        </article>
+        <article class="case-card">
+          <div class="card-top"><span class="pill historical">histórico / exploración</span><span>03</span></div>
+          <h3>Del sensor al dato</h3>
+          <p>Proyectos y trabajo con ESP32, Arduino, telemetría y comunicación de sensores. Una lección directa: los datos útiles tienen una cadena física y técnica detrás.</p>
+          <dl class="case-meta"><div><dt>DOMINIO</dt><dd>IoT · industria</dd></div><div><dt>FOCO</dt><dd>telemetría · integración</dd></div></dl>
+        </article>
+      </div>
+    </section>
 
-      <article class="role featured-role">
-        <div class="role-marker">01</div>
-        <div class="role-content">
-          <div class="role-head"><div><p class="company">WOM</p><h3>Cloud Data Engineer · GCP</h3></div><p class="date">Feb 2025 — hoy</p></div>
-          <ul>
-            <li>Diseño, desarrollo y mantengo pipelines analíticos ETL/ELT de gran escala sobre Google Cloud y plataformas internas.</li>
-            <li>Proceso, transformo y valido grandes volúmenes de datos operacionales para KPIs de red: tráfico, disponibilidad y congestión.</li>
-            <li>Trabajo con BigQuery, Cloud Run, Cloud Functions, Cloud Storage, Python, SQL y Apache Airflow.</li>
-            <li>Automatizo reportes técnicos y ejecutivos; aporto en control de costos, observabilidad y mejora continua.</li>
-          </ul>
+    <section id="lab" class="section lab-section">
+      <div class="shell">
+        <div class="section-intro lab-intro">
+          <p class="kicker">Laboratorio activo</p>
+          <h2>Construyo para entender<br>qué hay debajo.</h2>
+          <p>Un homelab para explorar modelos locales, agentes, herramientas y servicios. Es experimentación técnica: no una plataforma comercial ni una promesa de autonomía sin supervisión.</p>
         </div>
-      </article>
+        <div class="lab-grid">
+          <div class="diagram-panel">
+            <p class="mono-label">ARQUITECTURA SANEADA · SIN TOPOLOGÍA SENSIBLE</p>
+            <pre class="mermaid">
+flowchart LR
+  T([Tarea]) --> H[Harness / contexto]
+  H --> L[Modelos locales<br/>Ollama]
+  H --> C[Modelos cloud]
+  H --> R[Herramientas / MCP]
+  R --> A[APIs locales<br/>voz · imagen]
+  R --> D[(Contexto / eventos)]
+  H --> V[Verificación<br/>logs · revisión humana]
 
-      <div class="role-grid">
-        <article class="role compact-role"><div class="role-marker">02</div><div class="role-content"><p class="company">WOM · Jun 2023 — Feb 2025</p><h3>Performance Network Data Operations Engineer</h3><p>Administré un ecosistema de tres Linux y un Windows (128 núcleos, 15 TB de almacenamiento y ~250 GB RAM). Operé Airflow, MongoDB para datos JSON y servicios Django/REST Framework para extraer datos de telecomunicaciones.</p></div></article>
-        <article class="role compact-role"><div class="role-marker">03</div><div class="role-content"><p class="company">CCU · Jul 2021 — Jan 2023</p><h3>SysAdmin · ServiceNow</h3><p>Administración de ServiceNow: usuarios, desarrollos, proyectos y reportería para aplicaciones de gestión y optimización asociadas a cultura TPM.</p></div></article>
+  classDef core fill:#142118,stroke:#3f9b53,color:#edf0e8,stroke-width:2px
+  classDef local fill:#101a12,stroke:#3f9b53,color:#edf0e8
+  classDef cloud fill:#19132a,stroke:#7354b5,color:#edf0e8
+  classDef tool fill:#111912,stroke:#526c53,color:#edf0e8
+  class H core
+  class L,A,D local
+  class C cloud
+  class T,R,V tool
+            </pre>
+          </div>
+          <div class="lab-notes">
+            <article><span>01</span><div><h3>Modelos bajo restricciones reales</h3><p>Ollama, familias Qwen y Gemma, cuantización, contexto, latencia y límites de hardware local.</p></div></article>
+            <article><span>02</span><div><h3>Agentes con herramientas</h3><p>Instrucciones, estado, permisos, MCP, acciones verificables y control humano en el bucle.</p></div></article>
+            <article><span>03</span><div><h3>Aprendizaje por fricción</h3><p>Sandboxing, Linux, contenedores, acceso remoto, secretos, respaldos y recuperación: las partes que una demo suele omitir.</p></div></article>
+          </div>
+        </div>
+        <div class="lab-footnote"><span>NOTA</span> Un experimento de alertas de mercado se cerró cuando su costo de mantenimiento superó su utilidad. Decidir no operar un sistema sin valor suficiente también es una decisión de ingeniería.</div>
       </div>
     </section>
 
-    <section id="laboratorio" class="container section lab-section">
-      <div class="section-heading"><p class="eyebrow">Experimentación técnica</p><h2>Lo que estoy construyendo y probando.</h2></div>
-      <div class="lab-layout">
-        <article class="project-card">
-          <p class="project-index">LAB_01</p>
-          <h3>Laboratorio local de agentes</h3>
-          <p>Un entorno para probar agentes, harnesses, modelos locales y cloud, herramientas, APIs y automatizaciones. La idea es tener las piezas en las manos, no hablar de ellas desde lejos.</p>
-          <ul class="project-points">
-            <li>Un agente con <strong>Gemma 4</strong> ejecutado localmente mediante Ollama y otro conectado a modelos de OpenAI.</li>
-            <li>Actualmente testeando <strong>Qwen3.8</strong> en Ollama local y distintos harnesses para explorar ejecución, herramientas y flujos de trabajo de agentes.</li>
-            <li>Servicios locales para speech-to-text, text-to-speech y generación de imágenes, expuestos como APIs para los agentes.</li>
-            <li>Conectores MCP para Gmail y otros sistemas, explorando la interacción segura entre agentes y herramientas.</li>
-          </ul>
-        </article>
-        <article class="project-card void-card">
-          <p class="project-index">LAB_02</p>
-          <h3>Alertas de mercado: una lección de producto</h3>
-          <p>Implementé un sistema de reportes frente a variaciones drásticas del mercado. Fue una exploración técnica entretenida, pero decidí no mantenerlo: el valor práctico no justificaba su operación continua.</p>
-          <p class="lesson"><span>◈</span> Para mí, cerrar una iniciativa también es ingeniería: medir utilidad, costo operativo y foco antes de seguir invirtiendo.</p>
-        </article>
+    <section class="section shell" aria-labelledby="stack-title">
+      <div class="section-intro compact"><p class="kicker">Inventario técnico</p><h2 id="stack-title">Herramientas con contexto.</h2></div>
+      <div class="tool-details">
+        <details open><summary><span>Datos y analítica</span><b>BigQuery · ClickHouse · SQL · Airflow</b></summary><p>ETL/ELT, procedimientos, modelos analíticos, particionamiento, validación, calidad de datos y reportería.</p></details>
+        <details><summary><span>Cloud y plataforma</span><b>GCP · Docker · Terraform · Proxmox</b></summary><p>Cloud Run, Functions, Storage, servicios, virtualización, infraestructura reproducible y operación.</p></details>
+        <details><summary><span>Software y APIs</span><b>Python · Django · DRF · JS/TS</b></summary><p>Automatización, modelos relacionales, APIs, integración de sistemas y herramientas internas.</p></details>
+        <details><summary><span>Sistemas e infraestructura</span><b>Linux · PostgreSQL · MySQL · MongoDB</b></summary><p>Servicios, logs, monitoreo, respaldos, redes, cargas de datos y continuidad operacional.</p></details>
       </div>
     </section>
 
-    <section id="stack" class="container section stack-section">
-      <div class="section-heading"><p class="eyebrow">Kit de herramientas</p><h2>Optimizar es mi loop favorito.</h2><p>El stack cambia; el impulso no. Me interesa entender cada capa suficiente como para conectar el problema correcto con la herramienta correcta.</p></div>
-      <div class="stack-grid">
-        <div class="stack-group"><h3>Datos &amp; escala</h3><div class="tags"><span>BigQuery</span><span>ClickHouse</span><span>SQL</span><span>ETL / ELT</span><span>OLAP</span><span>Data Quality</span></div></div>
-        <div class="stack-group"><h3>Cloud &amp; ejecución</h3><div class="tags"><span>GCP</span><span>BigQuery</span><span>Cloud Run</span><span>Cloud Functions</span><span>Cloud Storage</span><span>Apache Airflow</span><span>Terraform</span><span>Proxmox</span><span>Docker</span></div></div>
-        <div class="stack-group"><h3>Sistemas &amp; automatización</h3><div class="tags"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C (fundamentos)</span><span>Bash</span><span>Linux</span><span>Django</span><span>REST Framework</span><span>MongoDB</span><span>MySQL</span><span>ESP32 / Arduino</span><span>IoT</span></div></div>
-      </div>
-    </section>
-
-    <section class="container closing-section">
-      <p class="eyebrow">Conversemos</p><h2>Las buenas conversaciones cruzan perspectivas.</h2>
-      <p>Me interesa conocer problemas, industrias e ideas distintas. Tecnología, ciencia, operaciones, producto o sistemas complejos: cuando se miran desde ángulos nuevos, aparecen mejores preguntas.</p>
-      <a class="button primary" href="mailto:f.fuenzalida.91@gmail.com">escríbeme</a>
+    <section id="contacto" class="contact-section shell">
+      <p class="kicker">Contacto</p>
+      <h2>Las buenas conversaciones<br>cruzan perspectivas.</h2>
+      <p>Datos, plataformas, automatización, IA aplicada o problemas de otra industria: cuando cambian los ángulos, aparecen mejores preguntas.</p>
+      <div class="hero-actions"><a class="button button-primary" href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a><a class="button" href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid ↗</a></div>
     </section>
   </main>
 
-  <footer><div class="container footer-inner"><p>Francisco Fuenzalida · Ingeniería de optimización</p><div class="footer-links"><a href="mailto:f.fuenzalida.91@gmail.com">f.fuenzalida.91@gmail.com</a><a href="https://github.com/FFuenzalid" rel="me">github.com/FFuenzalid</a></div></div></footer>
+  <footer><div class="shell footer-inner"><span>Francisco Fuenzalida</span><span>Data · platforms · systems</span></div></footer>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: { background: '#0b120c', primaryColor: '#142118', primaryTextColor: '#edf0e8', primaryBorderColor: '#3f9b53', lineColor: '#3f9b53', secondaryColor: '#101a12', tertiaryColor: '#19132a', fontFamily: 'system-ui, sans-serif' }, flowchart: { curve: 'basis' } });
